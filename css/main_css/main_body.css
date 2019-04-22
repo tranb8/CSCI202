@@ -1,0 +1,28 @@
+:root{
+    --font-family: 'Roboto';
+    --main-color: #05a081;
+    --text-color:#fff;
+    --bg-color:#eee;
+    --bg-color-2:#333;
+}
+body{
+    font-size: 18px;
+    font-family: var(--font-family);
+}
+.floatleft{
+    float: left;
+    width: 30%;
+}
+.floatright{
+    float:right;
+    width:60%;
+}
+main{
+    padding:4em 0;
+    background-color:var(--bg-color);
+}
+.btn{
+    background-color: var(--main-color);
+    padding: 1em 1.5em;
+    color:var(--text-color);
+}

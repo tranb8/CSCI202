@@ -1,0 +1,35 @@
+:root{
+    --main-color: #333333;
+}
+.box{
+    background-color: var(--main-color);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: boxname;
+}
+@keyframes boxname{
+    /* our conditions will go here */
+    /* from{
+        background-color: var(--main-color);
+    }
+    to{
+        background-color: red;
+    } */
+
+    0%{
+        background-color: var(--main-color); top: 0; left: 0;
+    }
+    25%{
+        background-color: green; top: 0; left: 300px;
+    }
+    50%{
+        background-color: blue; top: 300px; left: 300px;
+    }
+    75%{
+        background-color: yellow; top: 300px; left: 0;
+    }
+    100%{
+        background-color: red; top: 0; left: 0;
+    }
+}

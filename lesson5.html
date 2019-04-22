@@ -1,0 +1,130 @@
+<!-- 4/12/19
+    CSS Box Model
+
+    CSS Layout
+
+    Box Model:
+        HTML elements be considered as boxes
+        Box model is important in CSS design and layout
+        The main content has, padding, border, margins (in that order)
+    
+    The "Auto" Value:
+        sets the attributes to be all the same
+
+    Border:
+        [border-width, border-style, border-color]
+
+    Padding: (use em or rem) to make the website responsive
+    
+
+    Positioning in CSS:
+        Static: stays at roughly where you say is near a body 
+        Relative: positioned relative to the nearest ancestor and if no ancestor then it will use the document body
+        Absolute:
+        Fixed: the exact spot that we want it to be
+        Overflow: 
+            -Overflow Properties:
+                -visible
+                -hidden
+                -
+                -
+        Float: property specifies that an element should 
+        Clear: property specifies on which sides of element to automatically clear its child elements
+            -similar to the "clearfix" in Bootstrap        
+
+        
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 5 | Page Layout</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main1.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="lesson5.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="event.html">Events</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header><!-- End of header -->
+    <div class="banner"> <!-- Banner Images -->
+
+    </div>
+    <main>
+        <div class="container">
+            <div class="floatleft">
+                <h3>Welcome To Our Website</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nostrum beatae quae rem earum tenetur, quibusdam harum at iste aperiam eos adipisci minus ad illum officiis impedit mollitia animi eveniet id dolor sequi, consequatur debitis. Officiis error fuga rem deleniti.
+                </p>
+            </div><!-- End of floatleft -->
+            <div class="floatright">
+                <h3>About Our School</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque possimus eligendi veritatis repellat laudantium accusamus animi velit incidunt vitae ex. Maiores officiis id obcaecati provident quisquam cum, dolorum aperiam aliquam saepe facilis voluptatum praesentium dolore velit dolores repellendus eius quis aspernatur cumque ad ipsum ducimus. Officia voluptates perspiciatis reprehenderit sed!
+                </p>
+                <h4>More News About Our School</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate a ipsum velit nulla, iure vel sit facere repellendus, porro quam dolor aliquid facilis tenetur aspernatur molestias veniam aperiam sunt?
+                </p>
+                <h4>Last Campus News</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate a ipsum velit nulla, iure vel sit facere repellendus, porro quam dolor aliquid facilis tenetur aspernatur molestias veniam aperiam sunt?
+                </p>
+                <p>
+                    <!-- <a href="read.html" class="button">Read More</a> <!-- class="btm-btm-[warning,pr]"-->
+                    <a href="read.html" class="btm">Read More</a>
+                </p>
+            </div><!-- End of floatright -->
+        </div><!-- End of Container Div -->
+        <div class="clearfix"> <!-- this is from bootstrap -->
+
+        </div>
+    </main>
+    <section class="bg-color">
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-book"></i>
+                <h4>Knowledge is power</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iure!
+                </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <h4>Senior High School</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, et.
+                </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h4>Unmatched Proffessor</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, non!
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="clearfix">
+
+    </div>
+    <footer>
+        <div class="container">
+            <p>
+                Copyright &copy; 2019 Brian Tran
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

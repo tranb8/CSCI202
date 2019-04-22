@@ -1,0 +1,101 @@
+/* Author - Brian Tran */
+/* Version - V.2 */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+:root{ /* These are CSS Variables */
+    --font-family: 'Roboto';
+    --main-color: #0055aa;
+    --text-color: #fff;
+    --bg-color: #eee;
+    --bg-color-2: #333;
+}
+
+body{
+    font-style: 18px;
+    font-family: var(--font-family);
+}
+
+header{
+    width: 100%;
+    background-color: transparent !important;
+    position: absolute;
+    /* color: var(--text-color) !important; */
+    z-index: 1; /* z-index - is to bring the content either front (+) or back (-) */
+}
+
+header nav{
+    width: 100%;
+}
+
+nav{
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a{
+    padding: 1em 2.8em; 
+    display: inline-block;
+    color: var(--text-color) !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+
+.banner{
+    background-image: url(../images/banner.jpg);
+    background-size: cover; /*has either cover or contain */
+    width: 100%;
+    height: 100vh; /* Viewport Height = vh - is the same height of your browser */
+    /* position: absolute; */
+}
+
+.floatleft{
+    float: left;
+    width: 30%;
+}
+
+.floatright{
+    float: right;
+    width: 60%;
+}
+
+main{
+    padding: 4em 0; /* 4em for the top and bottom, then 0 for right and left*/
+    background-color: var(--bg-color);
+}
+
+.btm{ /* to style the button without using bootstrap */
+    background-color: var(--main-color);
+    padding: 1em 1.5em;
+    color: var(--text-color);
+}
+
+.box{
+    width: 30%;
+    float: left; /* float either the right or left */
+    padding: 2em;
+    text-align: center;
+}
+
+.bg-color{
+    background-color: var(--bg-color-2);
+    overflow: hidden;
+    color: var(--text-color);
+}
+
+.fas{
+    width: 100px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: var(--bg-color);
+    padding: 2em;
+    text-align: center;
+}

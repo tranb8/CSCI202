@@ -1,0 +1,54 @@
+/* This is a Comment */
+/* (This is what you have to have in every css style sheet) */
+/* Author - Brian Tran 
+    Version - 1.0
+*/
+/* Style Rule - selector, declaration */
+/* selector{propertyname: value;} */
+
+/* selector - element, id (use only once), class (use for multiple elements), multiple */
+
+/* !important - means that this will set the attribute as a first priortiy */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+/* Serif (has egdes) and Sans-Serif (doesn't have edges) */
+
+
+:root{ /* these are css variables */
+    --main-color: red;
+    --bg-color: lightblue;
+} /* to call / use your variable do var{(variablename);} */
+
+p{
+    color: green;
+    font-family: 'Nunito', sans-serif !important;/* Arial, "Helvetica Neue", Helvetica, sans-serif; /* shortcut: ffa == font-family */
+    font-style: 18px; /* shortcut: fs# == font-size: #; */
+    font-size: 10px; /* em, rem, px, % */
+}
+
+h1{
+    background-color: lightblue;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+}
+
+footer i{
+    font-style: italic;
+}
+
+#idname{
+    color: orange; 
+}
+
+.classname{
+    color: pink;
+}
+
+p,h1,h2,.classname{
+
+}
+
+

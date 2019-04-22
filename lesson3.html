@@ -1,0 +1,93 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+        Required meta tags 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        Bootstrap CSS 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+        Optional JavaScript 
+        jQuery first, then Popper.js, then Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html> -->
+<!-- web accessibility standards -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>Lesson 3 | Form &amp; Multimedia</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <!-- Using either: Container / Container-fluid -->
+    <div class="container">
+        <h2>Forms</h2>
+        <!-- action - is where you are sending your information, method - POST/GET Method, autocomplete, onsubmit  -->
+        <form action="welcom.html" method="POST" autocomplete="on">  <!-- use either the POST or GET -->
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="n1"><br>
+            
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="em"><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="pass"><br>
+
+            <label for="gender">Gender</label><br>
+            Male <input type="radio" name="n1" id="">
+            Female <input type="radio" name="n1" id=""><br><br>
+            Check <input type="checkbox" name="cb1" id=""><br><br>
+
+            <label for="city">City</label><br>
+            <select name="city" id="c">
+                <option value="o">Select One</option> <!-- The default option-->
+                <option value="o1">Seattle</option>
+                <option value="o2">Bellingham</option>
+            </select><br>
+
+            <label for="message">Message</label><br>
+            <textarea name="message" id="m" cols="50" rows="10"></textarea>
+            
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <h2>Audio</h2>
+        <audio controls autoplay loop muted>
+            <source type="audio/mp3" src="media/Phone Addiction_ Are You Addicted To Your Phone_.mp3">
+        </audio>
+
+        <h2>Video</h2>
+        <video controls width="" poster="images/21952686_1424054081005855_846664562_o.jpg">
+            <source type="video/mp4" src="media/received_1426534597424470.mp4">
+        </video>
+    </div>
+    <div style="">
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

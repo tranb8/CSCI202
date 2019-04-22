@@ -1,0 +1,26 @@
+/* Author - Brian Tran */
+/* Inclass lesson 7 */
+
+:root{
+    --main-color: #85a081;
+    --text-color: #ffffff;
+    --bg-color: #0d7d9a;
+    /*--shadow: 3px 3px 10px red; /* the old way of using the box-shadow */
+    --shadow: 0 0 3px rgba(0,0,0,0.34), 0 0 4px rgba(0,0,0,0.4);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.cards{
+    display: flex; /* means, 1 row and 1 column */
+    flex-wrap: wrap;
+    align-items: flex-start; /* a new way to align text */
+}
+
+.cards img{
+    max-width: 20vw; /* unit - vh, vw, rem */
+    margin: 10px;
+    box-shadow: var(--shadow);
+}

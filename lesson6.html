@@ -1,0 +1,40 @@
+<!-- 
+    (Work on getting Github Working)
+    firstime git
+        --version
+        init
+        config --global user.name "tranb8"
+        config --global user.email "tranb8@wwu.edu"
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 6 | Navigation</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="main2.css">
+</head>
+<body>
+    <nav> <!-- all navigations are list with anchor tags [nav>ul>li>a*4] --> 
+        <ul>
+            <li><a href="index.home">Home</a></li>
+            <li><a href="about.home">About</a></li>
+            <li><a href="service.home">Service</a></li>
+            <li><a href="gallery.home">Gallery</a>
+                <ul>
+                    <li><a href="gallery1.html">Gallery 1</a></li>
+                    <li><a href="gallery2.html">Gallery 2</a>
+                        <ul>
+                            <li><a href="mgallery.html">More Gallery</a></li>
+                            <li><a href="m1gallery.html">More Gallery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="contact.home">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

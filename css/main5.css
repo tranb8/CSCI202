@@ -1,0 +1,104 @@
+/* Author - Justice Banson */
+/* Version - V.2 */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('main_css/main_nav.css'); /* you can use the @import for css styling */
+@import url('main_css/main_body.css');
+:root{
+    --font-family: 'Roboto';
+    --main-color: #05a081;
+    --text-color:#fff;
+    --bg-color:#eee;
+    --bg-color-2:#333;
+}
+body{
+    font-size: 18px;
+    font-family: var(--font-family);
+}
+header{
+    width: 100%;
+    position:absolute;
+    z-index: 5;
+}
+header nav{
+    background: transparent !important;
+}
+
+/* the Navigation is now in main_css folder and main_nav.css */
+
+.banner{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
+}
+
+/* the main body is now in main_css folder and main_body.css */
+
+.box{
+    width: 30%;
+    float: left;
+    padding:2em;
+    text-align: center;
+    
+}
+.bg-color{
+    background-color: var(--bg-color-2);
+    overflow: hidden;
+    color: var(--text-color);
+}
+.fas{
+    padding: 0.5em;
+    font-size: 3em;
+}
+footer{
+    width: 100%;
+    padding: 2.6em;
+    background-color: var(--bg-color);
+    text-align: center;
+}
+
+#toggle, label{
+    display: none;
+}
+
+@media(max-width:700px){ /* @media - will target the whole website and the '()' is a parameter */
+    /* *{
+        background: red;
+    } */
+    /* you have to add a media queries */
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        position: absolute;
+        top: 3em;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+    .fa-bars{
+        color: var(--text-color);
+        font-size: 30px;
+        display: block;
+        float: right;
+    }
+    
+    .label{
+        cursor: pointer;
+        display: block;
+    }
+
+    #toggle:checked+ .menu{
+        display: block;
+    }
+
+    .floatleft, .floatright, .box{
+        float: none;
+        width: 100%;
+    }
+    /* .floatright{
+        float: none;
+        width: 100%;
+    } */
+
+}

@@ -1,0 +1,101 @@
+<!-- Lesson 9 | Responsive Design
+    - to enchance your website
+    * Media Queries - in CSS3 help with the capability of devices
+    - optimize layout for Mobile Use:
+        1. single column design
+        2. 
+    -
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 9 | Lesson 5 | Page Layout</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main5.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <label for="toggle" class="label"> <!-- to create a Hamburger -->
+                    <i class="fas fa-bars"></i>
+                </label>
+                    <input type="checkbox" id="toggle">                
+                <ul class="menu">
+                    <li><a href="lesson9.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><!-- End of header -->
+    <div class="banner"></div><!-- banner images -->
+    <main>
+        <div class="container">
+            <div class="floatleft">
+                <h3>Welcome To Our Website</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nostrum beatae quae rem earum tenetur, quibusdam harum at iste aperiam eos adipisci minus ad illum officiis impedit mollitia animi eveniet id dolor sequi, consequatur debitis. Officiis error fuga rem deleniti.
+                </p>
+            </div><!-- End of floatleft -->
+            <div class="floatright">
+                <h3>About Our School</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque possimus eligendi veritatis repellat laudantium accusamus animi velit incidunt vitae ex. Maiores officiis id obcaecati provident quisquam cum, dolorum aperiam aliquam saepe facilis voluptatum praesentium dolore velit dolores repellendus eius quis aspernatur cumque ad ipsum ducimus. Officia voluptates perspiciatis reprehenderit sed!
+                </p>
+                <h4>More News About Our School</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate a ipsum velit nulla, iure vel sit facere repellendus, porro quam dolor aliquid facilis tenetur aspernatur molestias veniam aperiam sunt?
+                </p>
+                <h4>Last Campus News</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate a ipsum velit nulla, iure vel sit facere repellendus, porro quam dolor aliquid facilis tenetur aspernatur molestias veniam aperiam sunt?
+                </p>
+                <p>
+                    <a href="read.html" class="btn">Read More</a>
+                </p>
+            </div><!-- End of floatright -->
+        </div><!-- End of Container Div -->
+        <div class="clearfix"></div>
+    </main>
+    <section class="bg-color">
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-book"></i>
+                <h4>Knowledge is power</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iure!
+                </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <h4>Senior High School</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, et.
+                </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h4>Unmatched Proffessor</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, non!
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="clearfix"></div>
+    <footer>
+        <div class="container">
+            <p>
+                Copyright &copy; 2019 Your Name
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
